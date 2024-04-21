@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0 30px;
+    min-height: 100vh;
+}
+
+header {
+    background: url('./images/bibleLand.png') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0 -30px;
+    padding: 30px;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links, .hide {
+    display: none;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: conic-gradient(at 37% 1000%, white, #171717a2);
+    transition: all 2s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    line-height: 300%;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+.navbar a:hover {
+    font-size: 19px;
+    color: #f15d4e;
+}
+.menuclose {
+    position: absolute;
+    right: 30px;
+    top: 37px;
+}
+.list-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22%;
+}
+.landing > h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.landing > button {
+    margin-top: 25%;
+    height: 60px;
+    width: 35%;
+    background-color: rgb(245, 214, 163);
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.bg-body-tertiary {
+background-color: rgba(240, 181, 181, 0)!important;
+}
+
+
+
+
+
+/* ****************************
+***********MAIN************* */
+
+
+.section-one {
+    margin: 52px 0;
+}
+.section-one > p {
+    margin: 20px 0 50px;
+}
+
+.section-two {
+    background-color: #303a1e;
+    color: whitesmoke;
+    margin: 0 -30px;
+    padding: 50px 30px;
+}
+.card {
+    background-color: #303a1e;
+    color: whitesmoke;
+    border: none;
+}
+.card > h2 {
+    margin-top: 20px;
+}
+.card > p {
+    margin: 20px 0 70px;
+}
+.card > img {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (min-width: 720px) {
+    header {
+        background-attachment: fixed;
+        min-height: 84vh;
+    }
+    .landing {
+        margin-top: 20%;
+    }
+    .landing > button {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 764px) {
+    .section-two {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 4%;
+    }
+    .card {
+        max-width: 48%;
+    }
+    .navbar-expand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .links {
+        display: inline;
+    }
+    .links a{
+        text-decoration: none;
+        color: gray;
+        padding: 0 15px;
+        transition: all 0.5s;
+    }
+    .links a:hover {
+        color: #f15d4e;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .landing > h1 {
+        text-align: left;
+    }
+}
