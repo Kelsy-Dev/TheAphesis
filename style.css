@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 body {
     margin: 0 30px;
     min-height: 100vh;
@@ -19,6 +20,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbar-collapse > h1 {
+    color: #d5ff25c4;
 }
 .links, .hide {
     display: none;
@@ -55,26 +59,29 @@ header {
 .list-links {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin-left: 45%;
 }
 
 .landing {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 22%;
+    margin-top: 40%;
 }
 .landing > h1 {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     color: white;
 }
 
-.landing > button {
-    margin-top: 25%;
-    height: 60px;
-    width: 35%;
-    background-color: rgb(245, 214, 163);
+.landing a {
+    margin-top: 36%;
+    padding: 20px 0;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 37%;
+    background-color: #d5ff25c4;
     border: 1px solid black;
     border-radius: 30px;
 }
@@ -91,7 +98,7 @@ background-color: rgba(240, 181, 181, 0)!important;
 ***********MAIN************* */
 
 
-.section-one {
+.section-one, .section-three {
     margin: 52px 0;
 }
 .section-one > p {
@@ -120,6 +127,68 @@ background-color: rgba(240, 181, 181, 0)!important;
     height: 280px;
     border-radius: 20px;
 }
+
+
+.section-three > p {
+    margin: 30px 0 50px;
+}
+/* ***********************************
+***********CONTACT FORM************* */
+.container {
+    margin: 0 -10px;
+    font-weight: 200;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-name {
+    display: flex;
+    flex-direction: row;
+}
+
+#firstname, #lastname, #email {
+    border: 1px solid gray;
+    background-color: #fafafa;
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 5px;
+}
+#firstname, #lastname {
+    width: 90%;
+}
+.lastName {
+    margin-right: -5%;
+}
+.email-label {
+    margin-top: 20px;
+}
+#email {
+    margin-bottom: 20px;
+    
+}
+#message {
+    min-height: 150px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+#submit {
+    margin-top: 20px;
+    background-color: #d5ff25c4;
+    border: 1px solid black;
+    color: black;
+    width: 30%;
+    height: 45px;
+
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -162,7 +231,7 @@ background-color: rgba(240, 181, 181, 0)!important;
     }
     .links a{
         text-decoration: none;
-        color: gray;
+        color: white;
         padding: 0 15px;
         transition: all 0.5s;
     }
