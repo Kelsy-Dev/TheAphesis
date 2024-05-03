@@ -1,9 +1,12 @@
 @media screen and #{$small-view} {
+    .welcoming {
+        margin-bottom: -1rem;
+    }
     .navbar-collapse > h1 {
         font-size: 35px;
     }
       .inner-headings {
-        margin: 70px 0;
+        margin: 20px 0;
       }
       .more {
         padding: 15px 30px;
@@ -73,7 +76,7 @@
         font-weight: bold;
     }
     .cpr > p:nth-child(2) {
-        margin: 35px 0 15px;
+        margin: 15px 0;
     }
     .join {
         margin-left: 62%;
@@ -103,10 +106,7 @@
     .more {
         display: none;
     }
-    .join {
-        // flex-direction: column;
-        // justify-content: center;
-    }
+    
     .joins-titl > h3 {
         font-size: 20px;
     }
@@ -163,7 +163,7 @@
       }
       .inner-headings {
         line-height: 50px;
-        height: 160px;
+        height: 150px;
         font-size: 35px;
         text-align: center;
         overflow: hidden;
