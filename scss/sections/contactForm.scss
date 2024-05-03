@@ -1,0 +1,46 @@
+.container {
+    font-weight: 100;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-name {
+    display: flex;
+    flex-direction: row;
+}
+
+#firstname, #lastname, #email {
+    border: 1px solid gray;
+    background-color: #fafafa;
+    border-radius: 5px;
+    height: 45px;
+    margin-top: 5px;
+}
+#firstname, #lastname {
+    width: 90%;
+}
+.lastName {
+    margin-right: -5%;
+}
+.email-label {
+    margin-top: 20px;
+}
+
+#email {
+    margin-bottom: 20px;
+}
+#message {
+    min-height: 150px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+#submit {
+    margin-top: 20px;
+    background-color: #ff1c1c;
+    border: 1px solid black;
+    color: black;
+    width: 30%;
+    height: 45px;
+    border-radius: 5px;
+}

@@ -1,0 +1,75 @@
+
+:root {
+    --my-gradient: linear-gradient(to bottom, #ff8a00, #da1b60); /* define gradient variable */
+  }
+
+.section-one, .section-three {
+    margin: 52px 0;
+    color: black;
+}
+
+.quizz {
+    & > h1 {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+    & > p {
+            margin: 20px 0 30px;
+            font-size: 17px;
+            line-height: 180%;
+    }
+}
+.vrs {   
+      display: flex;
+      justify-content: center;
+      //width: 50vw;
+      width: 200px;
+      max-width: 22em;
+    
+      position: relative;
+      padding: 1% 0em;
+      box-sizing: border-box;
+    
+      $border: 3px;
+      background: #efeee5;
+      background-clip: padding-box; /* !importanté */
+      border: solid $border transparent; /* !importanté */
+      border-radius: 1em;
+      box-shadow: 3px 3px 6px grey;
+    
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(to right, #ff1c1c, orange);
+      }
+    }
+
+
+.section-two {
+    background-color: $secondary-color;
+    color: $primary-color;
+    margin: 0 -30px;
+    padding: 50px 30px;
+}
+
+.card > h2 {
+    margin-top: 20px;
+}
+.card > p {
+    margin: 20px 0 70px;
+    line-height: 30px;
+}
+.card > img {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+}
+
+
+.section-three > p {
+    margin: 30px 0 50px;
+}
