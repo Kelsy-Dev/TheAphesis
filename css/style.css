@@ -131,20 +131,13 @@ header {
   padding: 50px 30px;
 }
 
-.card {
-  background: transparent;
-  border: none;
-}
-
 .card > h2 {
   margin-top: 20px;
-  color: #efeee5;
 }
 
 .card > p {
   margin: 20px 0 70px;
   line-height: 30px;
-  color: #efeee5;
 }
 
 .card > img {
