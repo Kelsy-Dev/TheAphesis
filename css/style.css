@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background: url("/images/hopes.jpg") no-repeat;
+  background: url("/bibleLand.png") no-repeat;
   background-size: cover;
   min-height: 100vh;
   margin: 0 -30px;
@@ -377,10 +377,6 @@ p, q, label {
   }
 }
 @media screen and (min-width: 720px) {
-  header {
-    background-attachment: fixed;
-    min-height: 84vh;
-  }
   .more {
     display: none;
   }
