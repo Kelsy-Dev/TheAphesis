@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background: url("../images/bibleLand.png") no-repeat;
+  background: url("/images/bibleLand.png") no-repeat;
   background-size: cover;
   min-height: 100vh;
   margin: 0 -30px;
@@ -347,7 +347,7 @@ p, q, label {
     margin: 35px 0 15px;
   }
   .join {
-    margin-right: -62%;
+    margin-left: 62%;
     margin-bottom: -100px;
   }
   .joins-titl > h3 {
