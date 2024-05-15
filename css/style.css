@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background: url("/images/bibleLand.png") no-repeat;
+  background: url("/images/headerpic.png") no-repeat;
   background-size: cover;
   min-height: 100vh;
   margin: 0 -30px;
@@ -16,10 +16,10 @@ header {
 
 .verse {
   font-weight: 300;
-  color: rgba(213, 255, 37, 0.768627451);
+  color: black;
 }
 
-.more {
+.more a {
   text-decoration: none;
   color: #efeee5;
   background-color: #ff1c1c;
@@ -94,6 +94,10 @@ header {
   margin: 20px 0 30px;
   font-size: 17px;
   line-height: 180%;
+}
+.quizz a {
+  text-decoration: none;
+  color: black;
 }
 
 .vrs {
@@ -303,7 +307,7 @@ p, q, label {
     margin: 20px 0;
   }
   .more {
-    padding: 15px 30px;
+    margin-top: 10vh;
   }
 }
 @media screen and (min-width: 480px) {
@@ -377,6 +381,10 @@ p, q, label {
   }
 }
 @media screen and (min-width: 720px) {
+  header {
+    background-attachment: fixed;
+    min-height: 84vh;
+  }
   .more {
     display: none;
   }

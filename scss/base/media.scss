@@ -9,7 +9,7 @@
         margin: 20px 0;
       }
       .more {
-        padding: 15px 30px;
+        margin-top: 10vh;
       }
 
 }
@@ -100,8 +100,8 @@
 
 @media screen and (min-width: 720px) {
     header {
-        // background-attachment: fixed;
-        // min-height: 84vh;
+        background-attachment: fixed;
+        min-height: 84vh;
     }
     .more {
         display: none;

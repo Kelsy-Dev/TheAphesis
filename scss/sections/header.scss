@@ -1,5 +1,5 @@
   header {
-    background: url('/images/bibleLand.png') no-repeat;
+    background: url('/images/headerpic.png') no-repeat;
     background-size: cover;
     min-height: 100vh;
     margin: 0 -30px;
@@ -14,10 +14,10 @@
  
   .verse {
     font-weight: 300;
-    color: #d5ff25c4;
+    color: black;
   }
 
-  .more {
+  .more a {
     text-decoration: none;
     color: $primary-color;
     background-color: $buttons-color;
