@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background-image: url(/images/bibleLand.png);
+  background-image: url("../../images/hopes.jpg");
   background-size: cover;
   min-height: 100vh;
   margin: 0 -30px;
