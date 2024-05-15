@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background: url("/images/hopes.jpg") no-repeat;
+  background: url("../../images/hopes.jpg") no-repeat;
   background-size: cover;
   min-height: 100vh;
   margin: 0 -30px;
