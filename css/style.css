@@ -378,7 +378,6 @@ p, q, label {
 }
 @media screen and (min-width: 720px) {
   header {
-    background: url("/images/bibleLand.png") no-repeat;
     background-attachment: fixed;
     min-height: 84vh;
   }
