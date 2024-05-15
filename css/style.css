@@ -377,10 +377,6 @@ p, q, label {
   }
 }
 @media screen and (min-width: 720px) {
-  header {
-    background-attachment: fixed;
-    min-height: 84vh;
-  }
   .more {
     display: none;
   }
