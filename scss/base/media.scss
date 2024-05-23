@@ -91,6 +91,9 @@
         flex-direction: row;
     }
     .quizz {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: #efeee5;
         flex: 15%;
         border: 1px solid black;
@@ -101,11 +104,16 @@
 
         & > p {
                 line-height: 180%;
+                justify-self: flex-start;
+        }
+        & > img {
+            display: inherit;
+            transform: scaleX(-1);
+            height: 100px;
+            align-self: flex-start;
         }
     }
-    .purple {
-        top: 36%;
-    }
+
     footer {
         padding: 70px 0;
     }
@@ -280,6 +288,23 @@
     .links a{
         font-size: 17px;
     }
+    .section-three {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 30px;
+    }
+    .contact-form {
+        width: 40vw;
+    }
+    .contact-img {
+        display: inherit;
+
+        & > img {
+            height: 350px;
+        }
+    }
+    
 }
 
 
@@ -299,11 +324,8 @@
         margin-right: 30px;
         padding: 30px;
         & > p {
-                line-height: 200%;
+            line-height: 200%;
         }
-    }
-    .purple {
-        top: 30%;
     }
 
     .card-img > img {
@@ -317,5 +339,10 @@
             font-size: 20px;
         }
     }
+
+    .contact-form {
+        width: 50vw;
+    }
+    
     
 }

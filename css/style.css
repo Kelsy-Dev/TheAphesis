@@ -185,6 +185,9 @@ nav a:hover {
   text-decoration: none;
   color: black;
 }
+.quizz > img {
+  display: none;
+}
 
 .vrs {
   display: flex;
@@ -253,17 +256,25 @@ nav a:hover {
   margin: 30px 0 50px;
 }
 .section-three h1, .section-three p {
-  margin-left: 4vw;
+  margin-left: 30px;
+}
+
+.contact-img {
+  display: none;
 }
 
 .container {
   font-weight: 100;
   transition: all, 1500ms;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 90vw;
+  margin-left: 30px;
 }
 
 .contact-name {
@@ -281,10 +292,6 @@ nav a:hover {
 
 #firstname, #lastname {
   width: 90%;
-}
-
-.lastName {
-  margin-right: -5%;
 }
 
 .email-label {
@@ -481,6 +488,9 @@ p, q, label {
     flex-direction: row;
   }
   .quizz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #efeee5;
     flex: 15%;
     border: 1px solid black;
@@ -490,9 +500,13 @@ p, q, label {
   }
   .quizz > p {
     line-height: 180%;
+    justify-self: flex-start;
   }
-  .purple {
-    top: 36%;
+  .quizz > img {
+    display: inherit;
+    transform: scaleX(-1);
+    height: 100px;
+    align-self: flex-start;
   }
   footer {
     padding: 70px 0;
@@ -638,6 +652,21 @@ p, q, label {
   .links a {
     font-size: 17px;
   }
+  .section-three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 30px;
+  }
+  .contact-form {
+    width: 40vw;
+  }
+  .contact-img {
+    display: inherit;
+  }
+  .contact-img > img {
+    height: 350px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .links a {
@@ -656,9 +685,6 @@ p, q, label {
   .quizz > p {
     line-height: 200%;
   }
-  .purple {
-    top: 30%;
-  }
   .card-img > img {
     width: 550px;
   }
@@ -667,6 +693,9 @@ p, q, label {
   }
   .card-words p {
     font-size: 20px;
+  }
+  .contact-form {
+    width: 50vw;
   }
 }
 
