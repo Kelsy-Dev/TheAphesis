@@ -1,21 +1,39 @@
 @media screen and #{$small-view} {
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+  width: 40px;
+  height: 2px;
+  transition-duration: 1s;
+}
+
     .welcoming {
         margin-bottom: -1rem;
     }
     .navbar-collapse > h1 {
-        font-size: 35px;
+        font-size: 25px;
+        transition-duration: 1s;
     }
       .inner-headings {
         margin: 20px 0;
       }
-      .more {
-        margin-top: 10vh;
-      }
+
+      .lg-vrs {
+        width: 85%;
+    }
 
 }
 @media screen and #{$mobile-view} {
+    .hamburger-menu {
+        top: 27px;
+    }
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+      height: 3px;;
+}
     .navbar-collapse > h1 {
-        font-size: 40px;
+        font-size: 33px;
     }
     .inner-headings {
         margin: 150px 0;
@@ -30,13 +48,33 @@
     }
 
     .links {
-        display: inline;
+        display: flex;
+        align-items: center;
+        margin: 20px 30px 0;
+        transition-property: color;
+        transition-duration: 1s;
+
+        a:hover {
+            color:rgba(255, 166, 0, 0.56);
+        }
     }
+    .btn {
+        background-color: transparent;
+        color: black;
+    }
+    .dropdown-menu a {
+        line-height: 220%;
+    }
+    ul.dropdown-menu.show{
+        box-shadow: black 2px 7px 10px 0px;
+        transform: translate3d(0px, 40px, 0px) !important;
+    }
+
     .links a{
         text-decoration: none;
-        color: white;
+        color: black;
         font-size: 15px;
-        padding: 0 5px;
+        padding: 0 12px;
         transition: all 0.5s;
     }
     .navbar-expand {
@@ -53,6 +91,7 @@
         flex-direction: row;
     }
     .quizz {
+        background-color: #efeee5;
         flex: 15%;
         border: 1px solid black;
         margin-right: 15px;
@@ -99,12 +138,8 @@
 
 
 @media screen and (min-width: 720px) {
-    header {
+    .outer-headings{
         background-attachment: fixed;
-        min-height: 84vh;
-    }
-    .more {
-        display: none;
     }
     
     .joins-titl > h3 {
@@ -149,18 +184,21 @@
         flex-wrap: wrap;
         column-gap: 4%;
     }
+   
     .card {
         max-width: 48%;
+ 
     }
+   
    
     
     .outer-headings {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
+
       .inner-headings {
         line-height: 50px;
         height: 150px;
@@ -182,6 +220,59 @@
         to {top: -150px;}
       }
     
+
+
+
+
+
+    .section-two {
+        display: contents;
+    }
+
+    .card-img > img {
+        translate: 0;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+        border: 1px solid black;
+        transition: all 1s;
+        width: 300px;
+        transition: transform, box-shadow, 2s;
+        animation: translate forwards;
+        animation-timeline: view(400px 200px);
+    }
+
+    @keyframes translate {
+        to {transform: translate(-10px, -20px);
+            box-shadow: 13px 14px 10px grey;}
+    }
+
+    .right-side > img {
+        border-radius:35% 50% 65% 62%/79% 40% 60% 50%;
+    }
+    .card-words {
+        margin-left: 50px;
+
+        h2 {
+            font-size: 37px;
+        }
+        p {
+            font-size: 17px;
+            letter-spacing: 2px;
+            width: 90%;
+        }
+    }
+    .lg-vrs {
+        width: 60%;
+    }
+    .card {
+        max-width: 100%;
+        margin-top: 95px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
 }
 
 
@@ -194,11 +285,7 @@
 
 
 @media screen and #{$desktop-view} {
-    header {
-        margin: 20px -15px;
-        border-radius: 20px;
-        height: 95vh;
-    }
+   
     .links a{
         font-size: 18px;
     }
@@ -218,4 +305,17 @@
     .purple {
         top: 30%;
     }
+
+    .card-img > img {
+        width: 550px;
+    }
+    .card-words {
+        h2 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    
 }

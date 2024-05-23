@@ -1,9 +1,19 @@
-  header {
+ 
+  header{
+    background-color: $primary-color;
+    margin: 0 -30px;
+    padding-bottom: 3vh;
+  }
+  .outer-headings {
     background: url('/images/headerpic.png') no-repeat;
     background-size: cover;
-    min-height: 100vh;
-    margin: 0 -30px;
-    padding: 30px;   
+    min-height: 84vh;
+    margin: 20px auto;
+    padding: 30px; 
+  
+        border-radius: 20px;
+        height: 80vh;
+        width: 95%;
   }
   .inner-headings {
     margin: 100px 0;
@@ -15,11 +25,4 @@
   .verse {
     font-weight: 300;
     color: black;
-  }
-
-  .more a {
-    text-decoration: none;
-    color: $primary-color;
-    background-color: $buttons-color;
-    padding: 15px 40px;
   }

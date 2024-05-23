@@ -1,5 +1,18 @@
+.section-three {
+    margin: 40px -30px 0 -30px;
+    padding: 100px 0;
+    background-color: #d5cab7;
+    p {
+        margin: 30px 0 50px;
+    }
+    h1, p {
+        margin-left: 4vw;
+    }
+}
+
 .container {
     font-weight: 100;
+    transition: all, 1500ms;
 }
 .contact-form {
     display: flex;
@@ -37,10 +50,11 @@
 }
 #submit {
     margin-top: 20px;
-    background-color: #ff1c1c;
+    background-color: $secondary-color;
     border: 1px solid black;
-    color: black;
+    color: $primary-color;
     width: 30%;
     height: 45px;
     border-radius: 5px;
+    box-shadow: 3px 3px 2px 0px grey
 }

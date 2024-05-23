@@ -9,6 +9,7 @@
 }
 
 .quizz {
+    z-index: -2;
     & > h1 {
         font-size: 26px;
         margin-top: 50px;
@@ -54,33 +55,33 @@
 
 
 .section-two {
-    background-color: $secondary-color;
-    color: $primary-color;
+    
     margin: 0 -30px;
-    padding: 50px 30px;
+    padding: 50px 30px 0;
 }
 .card {
-    background-color: $secondary-color;
+    background-color: transparent;
     border: none;
 }
 
-.card > h2 {
+.card-words > h2 {
     margin-top: 20px;
-    color: $primary-color;
+    
 
 }
-.card > p {
+.card-words > p {
     margin: 20px 0 70px;
     line-height: 30px;
-    color: $primary-color;
+    
 }
-.card > img {
+.card-img > img {
     width: 100%;
     height: 280px;
     border-radius: 20px;
 }
 
-
-.section-three > p {
-    margin: 30px 0 50px;
+.lg-vrs {
+    margin: -50px 0 70px;
+    width: 55%;
+    cursor: pointer;
 }
