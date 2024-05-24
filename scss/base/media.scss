@@ -55,7 +55,7 @@
         transition-duration: 1s;
 
         a:hover {
-            color:rgba(255, 166, 0, 0.56);
+            color: orange;
         }
     }
     .btn {
@@ -100,7 +100,7 @@
         margin-right: 15px;
         padding: 30px;
         border-radius: 20px;
-        // box-shadow: 2px 2px 2px grey;
+        transition: transform, box-shadow, 1s;
 
         & > p {
                 line-height: 180%;
@@ -109,9 +109,14 @@
         & > img {
             display: inherit;
             transform: scaleX(-1);
-            height: 100px;
+            height: 150px;
             align-self: flex-start;
         }
+    }
+    .quizz:hover {
+        transform: translate(-2px, -10px);
+        box-shadow: 6px 9px 5px 3px grey;
+        background-color: #cfc3a8;
     }
 
     footer {
